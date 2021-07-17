@@ -7,7 +7,6 @@ threads = None
 
 def get_speed():
     s = speedtest.Speedtest()
-    s.download(threads=threads)
     return s.download(threads=threads)/8000000
 
 @app.route("/") 
